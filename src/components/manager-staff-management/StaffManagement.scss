@@ -1,0 +1,15 @@
+@import "../../util/variables.scss";
+@import "../../util/mixins.scss";
+
+.staff-form {
+  @include md-up {
+    width: 800px;
+  }
+  @include md-down {
+    width: 100%;
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    width: 220px;
+    height: 220px;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../util/variables.scss";
+.login-web {
+  background-color: #f9f9fb;
+  min-height: 100vh;
+  .image-left {
+    width: 420px;
+    height: 390px;
+  }
+  .authen-box {
+    .title {
+      margin-bottom: 60px;
+      img {
+        width: 320px;
+      }
+    }
+    .form-login {
+      .ant-form-item-required {
+        color: #777777;
+      }
+      .form-input {
+        height: 36px;
+        border-radius: 4px;
+      }
+      .button-login {
+        height: 36px;
+        border-radius: 4px;
+        background-color: $main-color-2;
+        border-color: $main-color-2;
+      }
+      .forgot-password {
+        text-align: center;
+        color: #676767;
+        cursor: pointer;
+      }
+    }
+    // .ant-form-vertical .ant-form-item-label,
+    // .ant-col-24.ant-form-item-label,
+    // .ant-col-xl-24.ant-form-item-label {
+    //   padding: 0 0 0px;
+    // }
+  }
+}

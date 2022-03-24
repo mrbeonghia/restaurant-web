@@ -1,0 +1,19 @@
+
+
+.change-profile {
+	padding-top: 30px;
+	input[type="file"] {
+		display: none;
+	}
+	.wrap-input-avatar {
+		text-align: center;
+		margin-top: 10px;
+		.custom-file-upload {
+			border-radius: 2px;
+			border: 1px solid #ccc;
+			display: inline-block;
+			padding: 6px 12px;
+			cursor: pointer;
+		}
+	}
+}

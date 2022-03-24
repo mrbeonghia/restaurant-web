@@ -1,0 +1,79 @@
+@import "../../util/variables.scss";
+@import "../../util/mixins.scss";
+
+.ac {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @include lg-up {
+    width: 1200px;
+  }
+  @include lg-down {
+    width: 90%;
+  }
+  .alert-wrapper {
+    height: 100%;
+    .titleBar {
+      border-bottom: 1px solid #ccc;
+      height: 45px;
+      display: flex;
+      padding: 0.3rem 1rem;
+      background-color: $main-color;
+      h3 {
+        text-align: center;
+        align-self: center;
+        color: white;
+        width: 100%;
+        margin: 0 auto;
+      }
+      button {
+        background-color: $main-color;
+        border-color: transparent;
+        border-width: 0;
+        :hover {
+          background-color: $main-color;
+        }
+      }
+    }
+    .alert-modal {
+      background-color: white;
+      max-height: 90vh;
+      .content {
+        color: #43425d !important;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 30px;
+        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        button {
+          border-radius: 3px;
+          width: 180px;
+          height: fit-content;
+          font-size: 16px;
+          background-color: white;
+          border: 1px solid #757575;
+        }
+        .btn-close {
+          color: black;
+        }
+        .btn-confirm {
+          color: white;
+          background-color: $main-color;
+          margin-left: 20px;
+          border-color: $main-color;
+        }
+      }
+
+      #centered-toggle-button {
+        position: absolute;
+      }
+    }
+  }
+}

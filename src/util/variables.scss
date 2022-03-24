@@ -1,0 +1,21 @@
+$main-color: #4b2a05;
+$text-color: #f19834;
+$content-color: #e8e8e8;
+$border-color: #cbcbcb;
+$text-grey: #757575;
+$main-color-2: #fe7f00;
+$back-ground-main-color: #fff9d8;
+$green-cell: #c6e0b4;
+$red-color: #df0605;
+$grey-1: #efefef;
+$black1: #303030;
+
+:export {
+  mainColor: $main-color;
+  textColor: $text-color;
+  redColor: $red-color;
+  grey1: $grey-1;
+  grey2: $text-grey;
+  black1: $black1;
+  borderColor: $border-color;
+}

@@ -1,0 +1,63 @@
+@import "../../util/variables.scss";
+
+.modal {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 3000;
+}
+.ReactModal__Overlay ReactModal__Overlay--after-open {
+  z-index: 10000;
+}
+.titleBar {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding: 0.3rem 1rem;
+  background-color: $main-color;
+  h3 {
+    align-self: center;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+  }
+  button {
+    background-color: $main-color;
+    border-color: transparent;
+    border-width: 0;
+    cursor: pointer;
+    :hover {
+      background-color: $main-color;
+    }
+  }
+}
+.content {
+  padding: 1rem;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem 1.25rem 1rem;
+  button {
+    background: #78f89f;
+    border-radius: 5px;
+    padding: 10px 0px;
+    min-width: 100px;
+    margin: 0px 5px;
+    font-size: 0.8rem;
+    line-height: 1;
+    background-color: #efefef;
+    border-width: 1px;
+    border-color: #757575;
+    cursor: pointer;
+    border-style: solid;
+  }
+  .confirm-button {
+    background-color: $text-color;
+    border-color: $text-color;
+    color: white;
+  }
+}
+
+#centered-toggle-button {
+  position: absolute;
+}
